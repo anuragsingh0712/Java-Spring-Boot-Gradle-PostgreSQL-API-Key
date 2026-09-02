@@ -2,7 +2,7 @@ services:
   app:
     build: .
     ports:
-      - "26795:26795"
+      - "20790:20790"
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/gym
       SPRING_DATASOURCE_USERNAME: myuser

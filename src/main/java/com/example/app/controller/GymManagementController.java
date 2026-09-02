@@ -31,7 +31,7 @@ public class GymManagementController {
 
   @Operation(summary = "Create a gym management resource")
   @PostMapping(
-      "/{type:gyms|branches|members|trainers|workouts|classes|appointments|attendance|payments|notifications}")
+      "/{type:gyms|branches|members|trainers|workouts|classes|appointments|attendance|payments}")
   public ResponseEntity<RecordResponse> create(
       @PathVariable String type, @Valid @RequestBody RecordRequest request) {
     return ResponseEntity.status(HttpStatus.CREATED).body(service.create(type, request));
@@ -39,21 +39,21 @@ public class GymManagementController {
 
   @Operation(summary = "List gym management resources")
   @GetMapping(
-      "/{type:gyms|branches|members|trainers|workouts|classes|appointments|attendance|payments|notifications}")
+      "/{type:gyms|branches|members|trainers|workouts|classes|appointments|attendance|payments}")
   public List<RecordResponse> list(@PathVariable String type) {
     return service.list(type);
   }
 
   @Operation(summary = "Get a gym management resource")
   @GetMapping(
-      "/{type:gyms|branches|members|trainers|workouts|classes|appointments|attendance|payments|notifications}/{id}")
+      "/{type:gyms|branches|members|trainers|workouts|classes|appointments|attendance|payments}/{id}")
   public RecordResponse get(@PathVariable String type, @PathVariable UUID id) {
     return service.get(type, id);
   }
 
   @Operation(summary = "Update a gym management resource")
   @PutMapping(
-      "/{type:gyms|branches|members|trainers|workouts|classes|appointments|attendance|payments|notifications}/{id}")
+      "/{type:gyms|branches|members|trainers|workouts|classes|appointments|attendance|payments}/{id}")
   public RecordResponse update(
       @PathVariable String type, @PathVariable UUID id, @Valid @RequestBody RecordRequest request) {
     return service.update(type, id, request);
@@ -61,7 +61,7 @@ public class GymManagementController {
 
   @Operation(summary = "Delete a gym management resource")
   @DeleteMapping(
-      "/{type:gyms|branches|members|trainers|workouts|classes|appointments|attendance|payments|notifications}/{id}")
+      "/{type:gyms|branches|members|trainers|workouts|classes|appointments|attendance|payments}/{id}")
   public ResponseEntity<Void> delete(@PathVariable String type, @PathVariable UUID id) {
     service.delete(type, id);
     return ResponseEntity.noContent().build();

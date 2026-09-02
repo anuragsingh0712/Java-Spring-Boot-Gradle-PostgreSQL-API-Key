@@ -5,5 +5,5 @@ RUN gradle bootJar --no-daemon
 FROM eclipse-temurin:21-jre
 WORKDIR /app
 COPY --from=build /app/build/libs/*.jar app.jar
-EXPOSE 26795
-ENTRYPOINT ["java", "-jar", "/app/app.jar", "--server.port=26795"]
+EXPOSE 20790
+ENTRYPOINT ["java", "-jar", "/app/app.jar", "--server.port=20790"]

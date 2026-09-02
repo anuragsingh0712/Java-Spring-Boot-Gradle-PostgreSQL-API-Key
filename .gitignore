@@ -6,3 +6,9 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 .code_index/
+target/
+build/
+.gradle/
+api_test_report.xlsx
+changes_report.docx
+start_3429f5b28632932b.sh
