@@ -1,15 +1,15 @@
 package com.example.app.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import java.time.Instant;
 import java.util.UUID;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
-@Table(name = "api_keys")
+@Document(collection = "api_keys")
 public class ApiKey {
   @Id private UUID id;
+  @Indexed(unique = true)
   private String keyHash;
   private String name;
   private boolean active = true;

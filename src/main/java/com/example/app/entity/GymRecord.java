@@ -1,17 +1,16 @@
 package com.example.app.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.UUID;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
-@Table(name = "gym_records")
+@Document(collection = "gym_records")
 public class GymRecord extends AuditableEntity {
   @Id private UUID id;
-  private String recordType;
+  @Indexed private String recordType;
   private String title;
   private UUID memberId;
   private String status;

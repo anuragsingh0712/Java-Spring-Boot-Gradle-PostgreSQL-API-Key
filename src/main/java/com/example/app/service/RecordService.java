@@ -4,7 +4,6 @@ import com.example.app.dto.RecordRequest;
 import com.example.app.dto.RecordResponse;
 import com.example.app.entity.GymRecord;
 import com.example.app.repository.GymRecordRepository;
-import jakarta.transaction.Transactional;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.http.HttpStatus;
@@ -19,7 +18,6 @@ public class RecordService {
     this.repository = repository;
   }
 
-  @Transactional
   public RecordResponse create(String type, RecordRequest request) {
     GymRecord record = new GymRecord();
     record.setId(UUID.randomUUID());
@@ -38,14 +36,12 @@ public class RecordService {
     return response(existing(type, id));
   }
 
-  @Transactional
   public RecordResponse update(String type, UUID id, RecordRequest request) {
     GymRecord record = existing(type, id);
     copy(record, request);
     return response(repository.save(record));
   }
 
-  @Transactional
   public void delete(String type, UUID id) {
     repository.delete(existing(type, id));
   }
