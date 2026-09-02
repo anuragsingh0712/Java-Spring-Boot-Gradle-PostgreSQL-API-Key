@@ -60,3 +60,203 @@ Action:
 
 Identify and stop the process that's listening on port 26795 or configure this application to listen on another port.
 
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-09-02T17:23:42.669Z  INFO 580961 --- [           main] com.example.app.AppApplication           : Starting AppApplication v0.1.0 using Java 21.0.12.1 with PID 580961 (/home/himanshu.jangra/backendX/backend/outputs/2305e695-7303-42c5-99fa-7cfc985854b4/build/libs/app-0.1.0.jar started by himanshu.jangra in /home/himanshu.jangra/backendX/backend/outputs/2305e695-7303-42c5-99fa-7cfc985854b4)
+2026-09-02T17:23:42.674Z  INFO 580961 --- [           main] com.example.app.AppApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-09-02T17:23:44.731Z  INFO 580961 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-02T17:23:44.814Z  INFO 580961 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
+2026-09-02T17:23:46.163Z  INFO 580961 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 26795 (http)
+2026-09-02T17:23:46.190Z  INFO 580961 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-02T17:23:46.191Z  INFO 580961 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-09-02T17:23:46.266Z  INFO 580961 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-02T17:23:46.268Z  INFO 580961 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3502 ms
+2026-09-02T17:23:46.792Z  INFO 580961 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-02T17:23:47.214Z  INFO 580961 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@48d5ca17
+2026-09-02T17:23:47.217Z  INFO 580961 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-02T17:23:47.255Z  INFO 580961 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/gen_f972652468a5 (PostgreSQL 17.11)
+2026-09-02T17:23:47.267Z  WARN 580961 --- [           main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 17.11 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 16.
+2026-09-02T17:23:47.313Z  INFO 580961 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.028s)
+2026-09-02T17:23:47.357Z  INFO 580961 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2026-09-02T17:23:47.360Z  INFO 580961 --- [           main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-09-02T17:23:47.577Z  INFO 580961 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-02T17:23:47.791Z  INFO 580961 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-09-02T17:23:47.866Z  INFO 580961 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-02T17:23:48.522Z  INFO 580961 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-02T17:23:49.935Z  INFO 580961 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-02T17:23:50.026Z  INFO 580961 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-02T17:23:50.785Z  WARN 580961 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: fdbc6748-0035-45ff-9ec8-a2c8f84d7b0b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-02T17:23:50.804Z  INFO 580961 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-02T17:23:51.264Z  INFO 580961 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-09-02T17:23:51.880Z  INFO 580961 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 26795 (http) with context path '/'
+2026-09-02T17:23:51.895Z  INFO 580961 --- [           main] com.example.app.AppApplication           : Started AppApplication in 9.967 seconds (process running for 11.118)
+2026-09-02T17:26:24.671Z  INFO 580961 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-02T17:26:24.673Z  INFO 580961 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-02T17:26:24.684Z  INFO 580961 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-09-02T17:27:01.678Z  INFO 581989 --- [           main] com.example.app.AppApplication           : Starting AppApplication v0.1.0 using Java 21.0.12.1 with PID 581989 (/home/himanshu.jangra/backendX/backend/outputs/2305e695-7303-42c5-99fa-7cfc985854b4/build/libs/app-0.1.0.jar started by himanshu.jangra in /home/himanshu.jangra/backendX/backend/outputs/2305e695-7303-42c5-99fa-7cfc985854b4)
+2026-09-02T17:27:01.684Z  INFO 581989 --- [           main] com.example.app.AppApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-09-02T17:27:02.888Z  INFO 581989 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-02T17:27:02.947Z  INFO 581989 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2026-09-02T17:27:03.806Z  INFO 581989 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 26795 (http)
+2026-09-02T17:27:03.821Z  INFO 581989 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-02T17:27:03.821Z  INFO 581989 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-09-02T17:27:03.854Z  INFO 581989 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-02T17:27:03.856Z  INFO 581989 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2104 ms
+2026-09-02T17:27:04.234Z  INFO 581989 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-02T17:27:04.567Z  INFO 581989 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@79b8ecb
+2026-09-02T17:27:04.569Z  INFO 581989 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-02T17:27:04.609Z  INFO 581989 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/gen_f972652468a5 (PostgreSQL 17.11)
+2026-09-02T17:27:04.620Z  WARN 581989 --- [           main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 17.11 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 16.
+2026-09-02T17:27:04.660Z  INFO 581989 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.028s)
+2026-09-02T17:27:04.712Z  INFO 581989 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2026-09-02T17:27:04.716Z  INFO 581989 --- [           main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-09-02T17:27:04.851Z  INFO 581989 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-02T17:27:04.910Z  INFO 581989 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-09-02T17:27:04.949Z  INFO 581989 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-02T17:27:05.260Z  INFO 581989 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-02T17:27:06.210Z  INFO 581989 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-02T17:27:06.255Z  INFO 581989 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-02T17:27:06.863Z  WARN 581989 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 97dd46cb-8ae2-4c62-bdb2-86bbd2aeaead
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-02T17:27:06.879Z  INFO 581989 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-02T17:27:07.237Z  INFO 581989 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-09-02T17:27:07.848Z  INFO 581989 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 26795 (http) with context path '/'
+2026-09-02T17:27:07.863Z  INFO 581989 --- [           main] com.example.app.AppApplication           : Started AppApplication in 6.631 seconds (process running for 7.128)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-09-02T17:27:48.938Z  INFO 582440 --- [           main] com.example.app.AppApplication           : Starting AppApplication v0.1.0 using Java 21.0.12.1 with PID 582440 (/home/himanshu.jangra/backendX/backend/outputs/2305e695-7303-42c5-99fa-7cfc985854b4/build/libs/app-0.1.0.jar started by himanshu.jangra in /home/himanshu.jangra/backendX/backend/outputs/2305e695-7303-42c5-99fa-7cfc985854b4)
+2026-09-02T17:27:48.943Z  INFO 582440 --- [           main] com.example.app.AppApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-09-02T17:27:50.314Z  INFO 582440 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-02T17:27:50.369Z  INFO 582440 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+2026-09-02T17:27:51.337Z  INFO 582440 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 26795 (http)
+2026-09-02T17:27:51.355Z  INFO 582440 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-02T17:27:51.355Z  INFO 582440 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-09-02T17:27:51.393Z  INFO 582440 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-02T17:27:51.394Z  INFO 582440 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2375 ms
+2026-09-02T17:27:51.847Z  INFO 582440 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-02T17:27:52.226Z  INFO 582440 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@66a472b9
+2026-09-02T17:27:52.228Z  INFO 582440 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-02T17:27:52.265Z  INFO 582440 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/gen_f972652468a5 (PostgreSQL 17.11)
+2026-09-02T17:27:52.277Z  WARN 582440 --- [           main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 17.11 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 16.
+2026-09-02T17:27:52.318Z  INFO 582440 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.030s)
+2026-09-02T17:27:52.381Z  INFO 582440 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2026-09-02T17:27:52.385Z  INFO 582440 --- [           main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-09-02T17:27:52.517Z  INFO 582440 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-02T17:27:52.578Z  INFO 582440 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-09-02T17:27:52.617Z  INFO 582440 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-02T17:27:52.954Z  INFO 582440 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-02T17:27:53.937Z  INFO 582440 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-02T17:27:53.979Z  INFO 582440 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-02T17:27:54.604Z  WARN 582440 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4a2d73fd-64be-48c4-953c-0c36b14bd2e1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-02T17:27:54.622Z  INFO 582440 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-02T17:27:55.056Z  INFO 582440 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-09-02T17:27:55.783Z  WARN 582440 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-09-02T17:27:55.787Z  INFO 582440 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-02T17:27:55.789Z  INFO 582440 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-02T17:27:55.804Z  INFO 582440 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-02T17:27:55.828Z  INFO 582440 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-09-02T17:27:55.859Z ERROR 582440 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 26795 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 26795 or configure this application to listen on another port.
+
+2026-09-02T17:29:58.689Z  INFO 581989 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-02T17:29:58.692Z  INFO 581989 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-02T17:29:58.712Z  INFO 581989 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-09-02T17:40:30.961Z  INFO 584841 --- [           main] com.example.app.AppApplication           : Starting AppApplication v0.1.0 using Java 21.0.12.1 with PID 584841 (/home/himanshu.jangra/backendX/backend/outputs/2305e695-7303-42c5-99fa-7cfc985854b4/build/libs/app-0.1.0.jar started by himanshu.jangra in /home/himanshu.jangra/backendX/backend/outputs/2305e695-7303-42c5-99fa-7cfc985854b4)
+2026-09-02T17:40:30.965Z  INFO 584841 --- [           main] com.example.app.AppApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-09-02T17:40:32.220Z  INFO 584841 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-02T17:40:32.277Z  INFO 584841 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2026-09-02T17:40:33.201Z  INFO 584841 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 26795 (http)
+2026-09-02T17:40:33.217Z  INFO 584841 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-02T17:40:33.218Z  INFO 584841 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-09-02T17:40:33.259Z  INFO 584841 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-02T17:40:33.260Z  INFO 584841 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2238 ms
+2026-09-02T17:40:33.615Z  INFO 584841 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-02T17:40:33.941Z  INFO 584841 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@66a472b9
+2026-09-02T17:40:33.943Z  INFO 584841 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-02T17:40:33.973Z  INFO 584841 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/gen_f972652468a5 (PostgreSQL 17.11)
+2026-09-02T17:40:33.983Z  WARN 584841 --- [           main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 17.11 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 16.
+2026-09-02T17:40:34.035Z  INFO 584841 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.042s)
+2026-09-02T17:40:34.092Z  INFO 584841 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2026-09-02T17:40:34.095Z  INFO 584841 --- [           main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-09-02T17:40:34.220Z  INFO 584841 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-02T17:40:34.270Z  INFO 584841 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-09-02T17:40:34.304Z  INFO 584841 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-02T17:40:34.631Z  INFO 584841 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-02T17:40:35.571Z  INFO 584841 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-02T17:40:35.618Z  INFO 584841 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-02T17:40:36.272Z  WARN 584841 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a32892b8-b929-482b-8a81-98e8ed08117a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-02T17:40:36.290Z  INFO 584841 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-02T17:40:36.717Z  INFO 584841 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-09-02T17:40:37.424Z  INFO 584841 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 26795 (http) with context path '/'
+2026-09-02T17:40:37.443Z  INFO 584841 --- [           main] com.example.app.AppApplication           : Started AppApplication in 6.897 seconds (process running for 7.398)
+2026-09-02T17:43:28.133Z  INFO 584841 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-02T17:43:28.137Z  INFO 584841 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-02T17:43:28.155Z  INFO 584841 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
